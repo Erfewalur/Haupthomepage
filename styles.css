@@ -1,6 +1,7 @@
 body {
     padding: 0px;
     margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: rgb(155, 194, 155);
 }
 
@@ -14,4 +15,58 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#Inspirationsquelle {
+    width: 100%;
+    height: 300px;
+}
+
+#Inspirationsquelle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 800px) {
+    #Inspirationsquelle {
+        height: 400px;
+    }
+}
+
+nav{
+    width: 100%;
+    height: 85%;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+}
+
+nav ul {
+    float: center;
+    list-style: none;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    font-weight: 600;
+    padding: 24px;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #ebebeb;
+}
+
+nav ul li ul{
+    display: block;
+    position: absolute;
+    background-color: #338585;
 }
