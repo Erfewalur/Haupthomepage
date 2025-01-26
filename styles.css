@@ -1,6 +1,11 @@
-body {
+*{
     padding: 0px;
     margin: 0px;
+}
+
+
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: rgb(155, 194, 155);
 }
@@ -66,7 +71,23 @@ nav ul li a:hover {
 }
 
 nav ul li ul{
-    display: block;
+    display: none;
     position: absolute;
+    background-color: white;
+    padding: 7px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li ul li a{
+    color: black;
+    padding: 14px 20px;
+    border-radius: 10px;
+}
+
+nav ul li ul li a:hover{
     background-color: #338585;
 }
