@@ -35,13 +35,13 @@ header {
 
 @media screen and (min-width: 800px) {
     #Inspirationsquelle {
-        height: 400px;
+        height: 200px;
     }
 }
 
 nav{
     width: 100%;
-    height: 85%;
+    height: 10%;
     background-color: aliceblue;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
 }
@@ -59,7 +59,7 @@ nav ul li{
 
 nav ul li a {
     font-weight: 600;
-    padding: 24px;
+    padding: 12px;
     color: black;
     font-size: 18px;
     text-decoration: none;
@@ -89,5 +89,12 @@ nav ul li ul li a{
 }
 
 nav ul li ul li a:hover{
-    background-color: #338585;
+    background-color: #9cebb6;
+}
+
+section {
+    max-width: 800px;
+    margin-left: 1100px;
+    padding-left: 16px;
+    box-sizing: border-box;
 }
