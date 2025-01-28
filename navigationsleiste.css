@@ -1,0 +1,147 @@
+header {
+    position: relative;
+}
+
+#Hauptnavigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to right, #325e32, #1bd11b);
+    display: flex;
+}
+
+.logobereich {
+    width: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo {
+    background-image: url(1.Bilder/Banner\ 1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 850px;
+    height: 175px;
+}
+
+.navigationsbereich {
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-oben {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 26vw;
+    padding-left: 2%;
+    box-sizing: border-box;
+}
+
+.nav-oben a {
+    color: white;
+}
+
+.nav-link {
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.nav-icon {
+    font-size: 1.2em;
+}
+
+.nav-unten {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 0% 100%);
+    padding-left: 2%;
+}
+
+.nav-unten a {
+    color: rgb(8, 0, 0);
+}
+
+.navigationspunkte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.nav-punkt {
+    color: black;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding-top: 10px;
+    }
+
+    #hauptnavigation {
+        flex-direction: column;
+        height: 50px;
+    }
+
+    .nav-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #hauptnavigation div {
+        width: 100%;
+    }
+
+    .navigationsbereich {
+        display: none;
+    }
+
+    .nav-oben {
+        display: none;
+    }
+
+    .nav-unten {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+        position: absolute;
+        top: 3px;
+        right: 12px;
+        font-size: 30px;
+        color: white;
+        user-select: none;
+    }
+
+    .navigation-geoeffnet .navigationsbereich {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .navigation-geoeffnet .nav-unten {
+        display: flex;
+        flex-direction: column-reverse;
+        border-bottom: 1px solid gray;
+    }
+
+    .navigation-geoeffnet .navigationspunkte {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
