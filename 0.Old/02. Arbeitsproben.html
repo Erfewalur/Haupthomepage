@@ -1,0 +1,97 @@
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scable=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="icon" sizes="192x192" href="1.Bilder/1.Vorstellung/Bewerbung.png">
+    <title>Arbeitsproben</title>
+  </head> 
+  <style>
+    #pic{
+      background: url(1.Bilder/1.Vorstellung/Banner\ 4.jpeg) center no-repeat ;
+      background-size: cover;
+      height: 282px;
+      overflow: hidden;
+    }
+  </style>
+  <body>
+    <div id="pic" class="d-none d-sm-block"></div>
+<!-- NAVIGATIONSLEISTE -->
+<div class="container-fluid">
+  <div class="row">
+  <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: rgba(8, 85, 14, 0.822); height: 3rem;">
+      <div class="container-fluid">
+        <span class="navbar-brand"></span>
+        <div id=menue class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center m-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><b>Zur Person</b></a>
+            </li>
+            <li class="nav-item">
+          <a class="nav-link" href="01. Werdegang.html"><b>Werdegang</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="02. Arbeitsproben.html"><b>Arbeitsproben</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="03. Motivation.html"><b>Motivation</b></a>
+        </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+    <!-- SEITENINHALT -->   
+        <div class="row">
+          <div class="col-sm-1" style="width: 20%"></div>
+          <div class="col-sm-8" style="height: 15rem; width: 60%">
+          <div class="card-body" style="height: 15rem;">
+            <h6><br></h6>
+            <div class="card border-dark">
+              <div class="card-body">
+                <!-- 1.Phase: Anforderungsanalyse-->
+                <h3 class="card-title text-center"><b></b></h3>
+                    <!-- ab hier kommt der benötigten Inhalt zur Einführung und Selbstdarstellung hinein -->   
+                    <h5><p class="card-text" style="background-color: rgba(182, 12, 12, 0.842); height: 2rem;"><b>Kategorie 1: Websiteentwicklung</b></p></h5>
+                    <br>
+                    <!-- ab hier kommt die Auflistung der momentanen Frontendprojekte hinein -->
+                    <p><b>Website 1:</b> <a href="https://astrola.blog/Scheuer/Home/" class="link-primary"> Bewerbungshomepage</a> > HTML5 mit Bootstrap</p>
+                    <p><b>Website 2:</b> <a href="https://astrola.blog/Scheuer/SWTOR/Home/" class="link-primary"> Spielehilfe</a> > HTML5</p>
+                    <p><b>Website 3:</b> <a href="https://astrola.blog/Scheuer/Celtic/" class="link-primary"> Homepage zum Spieleprojekt "Celtic"</a> > HTML5 mit CSS3-Style und JavaScript Funktionalität</p>
+                    <br>
+                    <h5><p class="card-text" style="background-color: rgba(182, 12, 12, 0.842); height: 2rem;"><b>Kategorie 2: Datenbankentwicklung</b></p></h5>
+                    <!-- ab hier kommt die Auflistung der momentanen Datenbankprojekte hinein -->
+                    <p><b>Datenbank 1:</b> <a href="https://astrola.blog/Scheuer/Medienbibliothek/" class="link-primary">Medien</a> > Content-Management-System</p>
+                    <p><b>Datenbank 2:</b> <a href="https://astrola.blog/Scheuer/Reisen/" class="link-primary">Reisen</a> > Content-Management-System > PHP mit HTML5 und Sass-Style in Vorbereitung</p>
+                    <br>
+                    <h5><p class="card-text" style="background-color: rgba(182, 12, 12, 0.842); height: 2rem;"><b>Codeauszüge</b></p></h5>
+                    <!-- ab hier kommt ein Link für die Code Präsentation hinein -->
+                    <br>
+                    <p><b>Github:</b> <a href="https://github.com/Erfewalur" class="link-primary"> Meine Codeprogrammierung</a></h5>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- SEITENENDE -->
+        </div>
+        <!-- Vorlage für Auslagerung der Navigation-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script>
+          $(".nav-item").click(function(){$("#menue").collapse('hide');
+          $("#menue .bg-primary").removeClass(".bg-primary");
+          $(this).addClass("bg-primary");
+        })
+          $(".dropdown").click(function(){
+        if(!$(this).hasClass("show")) return;
+          $("#menue li>bg-primary").removeClass("bg-primary");
+          $(this).addClass("bg-primary");
+        })
+        </script>
+      </body>
+</html>
