@@ -10,6 +10,10 @@
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
+  .full-width-img {
+    width: 100%;
+  }
+
   header {
     padding-top: 24px;
     padding-bottom: 24px;
