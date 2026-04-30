@@ -116,3 +116,8 @@ section {
     padding: 0.6rem 1.4rem;
     font-weight: 600;
 }
+
+.pill:nth-child(1) { color: #751205; } /* Analytisch */
+.pill:nth-child(2) { color: #5c0385; } /* Empathisch */
+.pill:nth-child(3) { color: #0875a0; } /* Strukturiert */
+.pill:nth-child(4) { color: #047709; } /* Rheinisch Direkt */
